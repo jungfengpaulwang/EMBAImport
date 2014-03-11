@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3BA76CDE-1BBD-46EA-ACF0-65B1D0344626}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EMBA.Import</RootNamespace>
+    <AssemblyName>EMBA.Import</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>obj\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\FiscaRuntime\modules\LIB_ASPOSE\Aspose.Cells.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=9.5.0.1, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <HintPath>..\FiscaRuntime\components\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="FISCA">
+      <HintPath>..\FiscaRuntime\kernel\FISCA.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FISCA.Presentation">
+      <HintPath>..\FiscaRuntime\kernel\FISCA.Presentation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Step1\SelectSource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Step1\SelectSource.designer.cs">
+      <DependentUpon>SelectSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Step2\SelectKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Step2\SelectKey.Designer.cs">
+      <DependentUpon>SelectKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Step3\SelectFields.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Step3\SelectFields.designer.cs">
+      <DependentUpon>SelectFields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Step4\SelectValidate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Step4\SelectValidate.designer.cs">
+      <DependentUpon>SelectValidate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Step5\AdvancedFields.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Step5\AdvancedFields.designer.cs">
+      <DependentUpon>AdvancedFields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Step6\SelectImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Step6\SelectImport.Designer.cs">
+      <DependentUpon>SelectImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WizardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WizardForm.designer.cs">
+      <DependentUpon>WizardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\XmlViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\XmlViewForm.designer.cs">
+      <DependentUpon>XmlViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportMessages.cs" />
+    <Compile Include="ImportWizard\FieldProcessor.cs" />
+    <Compile Include="ImportWizard\ImportFullOption.cs" />
+    <Compile Include="ImportWizard\ImportOption.cs" />
+    <Compile Include="ImportWizard\ImportWizard.cs" />
+    <Compile Include="ImportWizard\IRowStreamImport.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\Constants.cs" />
+    <Compile Include="Utility\FunctionSpliter.cs" />
+    <Compile Include="XmlExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\filter_data_close_64.png" />
+    <Content Include="Resources\filter_data_info_64.png" />
+    <Content Include="Resources\filter_data_ok_64.png" />
+    <Content Include="Resources\ok_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\Step1\SelectSource.resx">
+      <DependentUpon>SelectSource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Step2\SelectKey.resx">
+      <DependentUpon>SelectKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Step3\SelectFields.resx">
+      <DependentUpon>SelectFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Step4\SelectValidate.resx">
+      <DependentUpon>SelectValidate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Step5\AdvancedFields.resx">
+      <DependentUpon>AdvancedFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Step6\SelectImport.resx">
+      <DependentUpon>SelectImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WizardForm.resx">
+      <DependentUpon>WizardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\XmlViewForm.resx">
+      <DependentUpon>XmlViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EMBA.DocumentValidator\EMBA.DocumentValidator.csproj">
+      <Project>{A108F18E-D035-45F3-B9D4-F1B612C0DAD9}</Project>
+      <Name>EMBA.DocumentValidator</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\EMBA.Validator\EMBA.Validator.csproj">
+      <Project>{FEA37838-0B12-483A-8091-4B1A9A2C9378}</Project>
+      <Name>EMBA.Validator</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

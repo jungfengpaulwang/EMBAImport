@@ -1,0 +1,15 @@
+E:\TFServer2013\ischoolteam\ischool_EMBA\FiscaRuntime\addmodules\Import\EMBA.Import.dll
+E:\TFServer2013\ischoolteam\ischool_EMBA\FiscaRuntime\addmodules\Import\EMBA.Import.pdb
+E:\TFServer2013\ischoolteam\ischool_EMBA\EMBA.Import\obj\Debug\EMBA.Import.csprojResolveAssemblyReference.cache
+E:\TFServer2013\ischoolteam\ischool_EMBA\EMBA.Import\obj\Debug\EMBA.Import.SelectSource.resources
+E:\TFServer2013\ischoolteam\ischool_EMBA\EMBA.Import\obj\Debug\EMBA.Import.SelectKey.resources
+E:\TFServer2013\ischoolteam\ischool_EMBA\EMBA.Import\obj\Debug\EMBA.Import.SelectFields.resources
+E:\TFServer2013\ischoolteam\ischool_EMBA\EMBA.Import\obj\Debug\EMBA.Import.SelectValidate.resources
+E:\TFServer2013\ischoolteam\ischool_EMBA\EMBA.Import\obj\Debug\EMBA.Import.AdvancedFields.resources
+E:\TFServer2013\ischoolteam\ischool_EMBA\EMBA.Import\obj\Debug\EMBA.Import.SelectImport.resources
+E:\TFServer2013\ischoolteam\ischool_EMBA\EMBA.Import\obj\Debug\EMBA.Import.WizardForm.resources
+E:\TFServer2013\ischoolteam\ischool_EMBA\EMBA.Import\obj\Debug\EMBA.Import.XmlViewForm.resources
+E:\TFServer2013\ischoolteam\ischool_EMBA\EMBA.Import\obj\Debug\EMBA.Import.Properties.Resources.resources
+E:\TFServer2013\ischoolteam\ischool_EMBA\EMBA.Import\obj\Debug\EMBA.Import.csproj.GenerateResource.Cache
+E:\TFServer2013\ischoolteam\ischool_EMBA\EMBA.Import\obj\Debug\EMBA.Import.dll
+E:\TFServer2013\ischoolteam\ischool_EMBA\EMBA.Import\obj\Debug\EMBA.Import.pdb
