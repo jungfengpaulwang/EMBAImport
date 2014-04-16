@@ -32,7 +32,9 @@ namespace EMBA.Import
                 List<string> SelectableFields = arg.TryGetList<string>("SelectableFields");
 
                 if (SelectableFields.Count == 0)
+                {
                     return ContinueDirection.Skip;
+                }
                 #endregion
 
                 ContinueDirection Direction = new SelectFields(arg).ShowWizardDialog();

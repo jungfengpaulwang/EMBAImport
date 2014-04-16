@@ -99,6 +99,11 @@ namespace EMBA.Import
             return RequiredFields.TrueForAll(x => Fields.Contains(x));
         }
 
+        public List<string> GetRequiredFields()
+        {
+            return this.RequiredFields;
+        }
+
         public List<string> GetSelectableFields(List<string> KeyFields,List<string> SheetFields)
         {
             List<string> Result = new List<string>();

@@ -141,7 +141,7 @@ namespace EMBA.Import
                     //記錄選取鍵值及動作
                     string mKey = (cboIdField.Items[cboIdField.SelectedIndex] as ComboItem).Text;
                     mImportOption.SelectedKeyFields = ((cboIdField.Items[cboIdField.SelectedIndex] as ComboItem).Tag as List<string>);//mSelectableKeyFields[mSelectableKeyFields.Keys.ToList()[cboIdField.SelectedIndex]];
-                    //mImportOption.SelectedFields = new List<string>(); //初始化SelectedFields，若是SelectableFields為0，則會判斷跳到下個畫面。
+                    mImportOption.SelectedFields = new List<string>(); //初始化SelectedFields，若是SelectableFields為0，則會判斷跳到下個畫面。
                     mSelectedKeyFields = mImportOption.SelectedKeyFields;
                     mImportOption.Action = GetSelectedImportAction();
 
